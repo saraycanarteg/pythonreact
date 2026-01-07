@@ -30,7 +30,7 @@ function App() {
       setLoading(true);
       setError(null);
       
-      const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:3007/customer';
+      const API_URL = 'https://pythonbackend-9kvr.onrender.com/customer' || 'http://localhost:3007/customer';
       const response = await fetch(API_URL);
       
       if (!response.ok) {
